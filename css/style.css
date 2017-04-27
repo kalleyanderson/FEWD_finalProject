@@ -1,0 +1,348 @@
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #CAEBF2;
+}
+
+.navbar-default {
+  background-color: #CAEBF2;    
+  border-color: transparent;
+}
+
+.logo {
+  float: left;
+  margin: 5px 0 5px 10px;
+}
+
+ul {
+  padding: 5px;
+}
+
+li {
+  display: inline;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #FF3B3F;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.nav-pills>li.active>a {
+  background-color: #FF3B3F;
+}
+
+.nav-pills>li.active>a:hover {
+  background-color: #eee;
+  color: #FF3B3F;
+}
+
+a:hover {
+  color: #FF3B3F;
+}
+
+.cta:hover {
+  color: white;
+}
+
+.icon-bar {
+  padding: 2px;
+}
+
+.accentColor {
+  background-color: #EFEFEF;
+}
+
+.main {
+  padding: 5% 10%;
+}
+
+.carousel {
+    float: left;
+    width: 55%;
+    display: inline;
+}
+
+.hero{
+  padding: 20px;
+  width: 100%;
+}
+
+
+h1 {
+  padding: 10px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+h2 {
+  padding: 10px;
+}
+
+.title {
+  float: right;
+  width: 45%;
+  padding: 5% 3%;
+}
+
+.cta {
+  background-color: #FF3B3F;
+  padding: 10px 25px;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 24px;
+  color: white;
+  display: inline-block;
+  margin: 30px;
+  text-decoration: none;
+}
+
+#description {
+  padding: 20px;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.filters {
+  background-color
+}
+
+.filters span {
+  text-align: left;
+  display: inline-block;
+}
+
+.filters label {
+  display: block;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.browsePets {
+    background: #EFEFEF;
+}
+
+.grid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.adoptablePet {
+  display: inline-block;
+  padding: 3%;
+  width: 40%;
+}
+.adoptablePet a {
+  display: block;
+}
+
+.adoptablePet img {
+  width: 75%;
+}
+
+.adoptablePet span {
+  padding: 2px;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em .75em;
+  background: white;
+  border: none;
+  color: #222;
+  font-family: sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.button-group {
+  margin: 5px;
+  display: inline-block;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #FF3B3F;
+}
+
+.button.is-checked {
+  color: white;
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+hr {
+  color: #A9A9A9;
+  width: 80%;
+}
+
+span {
+  padding: 20px;
+  margin: 0 auto;
+  display: block;
+  font-size: 24px;
+  color: #FF3B3F;
+}
+
+.blockquote {
+  margin: 0 auto;
+  width: 90%;
+  font-size: 24px;
+}
+
+.testimonial {
+  float: left;
+  width: 25%;
+  padding: 20px 0px;
+  margin: 2% 3%;
+  display: inline;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.blockquote > :first-child {
+  margin: 2% 3% 2% 10%;
+}
+
+blockquote {
+  font-family: 'Shadows Into Light', cursive;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+form {
+  width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+label {
+  font-weight: 400;
+}
+
+footer {
+  clear: both;
+  background-color: #CAEBF2;
+}
+
+footer .logo{
+  padding: 20px;
+}
+
+footer ul {
+  display: inline-block;
+  margin: 3% 8%;
+  float: right;
+}
+
+footer .social {
+  width: 30px;
+  margin: 7px;
+}
+
+.footerContent {
+  margin: 0 auto;
+  width: 95%;
+}
+
+.navbar-nav {
+  float: right;
+}
+
+
+@media (max-width: 768px) {
+
+  .carousel {
+    display: none;
+  }
+
+  .title {
+    width: 90%;
+  }
+
+  #description {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .testimonial {
+    display: block;
+    width: 90%;
+    padding: 5px;
+  }
+
+  blockquote {
+    border-left: transparent;
+    margin: 0 auto;
+  }
+
+  p {
+    margin: 0 auto;
+  }
+
+  .blockquote > :first-child {
+    margin: 0 auto;
+  }
+
+  .adoptablePet {
+    width: 90%;
+  }
+
+  label button {
+    margin: 5px;
+  }
+
+  footer ul {
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    float: none;
+  }
+
+  footer .logo {
+    float: none;
+  }
+
+}
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anderson House</title>
+
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+<body>
+	<header class="clearfix">
+		<nav class="navbar navbar-default container">
+			<div class="container-fluid">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a href="index.html"><img class="logo" src="images/Logo.jpg" alt="Brand"></a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav nav-pills">
+						<li role="presentation" class="active"><a href="index.html">About</a></li>
+						<li role="presentation"><a href="adoptable.html">Adoptable Pets</a></li>
+						<li role="presentation"><a href="events.html">Events</a></li>
+						<li role="presentation"><a href="volunteer.html">Volunteer</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+	</header>
+		<div class="filters accentColor">
+			<div class="container">
+				<span>Filter by:</span>
+				<label>Animal:
+					<div class="button-group js-radio-button-group" data-filter-group="animal">
+					  <button class="button is-checked" data-filter="">Any</button>
+					  <button class="button" data-filter=".dog">Dog</button>
+					  <button class="button" data-filter=".cat">Cat</button>
+					  <button class="button" data-filter=".hamster">Hamster</button>
+					</div>
+				</label>
+				<label>Age:
+					<div class="button-group js-radio-button-group" data-filter-group="age">
+					  <button class="button is-checked" data-filter="">Any</button>
+					  <button class="button" data-filter=".baby">Baby (under 2 yrs)</button>
+					  <button class="button" data-filter=".young">Young (2-6 yrs)</button>
+					  <button class="button" data-filter=".senior">Senior (6+ yrs)</button>
+					</div>
+				</label>
+				<label>Location:
+					<div class="button-group js-radio-button-group" data-filter-group="location">
+					  <button class="button is-checked" data-filter="*">Any</button>
+					  <button class="button" data-filter=".wa">Washington</button>
+					  <button class="button" data-filter=".or">Oregon</button>
+					  <button class="button" data-filter=".id">Idaho</button>
+					</div>
+				</label>
+			</div>
+		</div>
+		<div class="browse">
+			<span>Browse Adoptable Pets</span>
+			<div class="browsePets clearfix">
+				<div class="grid container">
+					<div class="adoptablePet dog senior or">
+						<img src="images/adoptabledog 1.jpg">
+						<a>Milo</a>
+						<span>Portland, Oregon</span>
+						<a>Submit Application</a>
+					</div>
+					<div class="adoptablePet cat senior id">
+						<img src="images/adoptableCat 1.jpg">
+						<a>Otis</a>
+						<span>Boise, Idaho</span>
+						<a>Submit Application</a>
+					</div>
+					<div class="adoptablePet hamster young wa">
+						<img src="images/adoptableHamster 1.jpg">
+						<a>Fluffy</a>
+						<span>Edmonds, Washington</span>
+						<a>Submit Application</a>
+					</div>
+					<div class="adoptablePet dog baby wa">
+						<img src="images/adoptabledog 2.jpg">
+						<a>Spot</a>
+						<span>Seattle, Washington</span>
+						<a>Submit Application</a>
+					</div>
+					<div class="adoptablePet dog senior or">
+						<img src="images/adoptabledog 3.jpg">
+						<a>Scruffy</a>
+						<span>Bend, Oregon</span>
+						<a>Submit Application</a>
+					</div>
+					<div class="adoptablePet cat young wa">
+						<img src="images/adoptablecat 2.jpg">
+						<a>Snowball</a>
+						<span>Tacoma, Washington</span>
+						<a>Submit Application</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	<footer class="clearfix">
+		<div class="footerContent container">
+			<a href="index.html"><img class="logo" src="images/Logo.jpg"></a>
+			<ul class="clearfix"> 
+				<li>Find us on:</li>
+				<li><a href="www.instagram.com"><img src="images/instagram.png" alt="instagram" class="social"></a></li>
+				<li><a class="social" href="www.twitter.com"><img src="images/twitter.png" alt="twitter" class="social"></a></li>
+				<li><a class="social" href="www.facebook.com"><img src="images/facebook.png" alt="facebook" class="social"></a></li>
+			</ul>
+		</div>
+	</footer>
+	</div>
+	<script
+  		src="https://code.jquery.com/jquery-3.2.1.js"
+ 		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+ 		crossorigin="anonymous">
+ 	</script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
